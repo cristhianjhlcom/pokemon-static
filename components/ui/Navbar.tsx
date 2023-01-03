@@ -1,5 +1,6 @@
 import {Spacer, Text, useTheme} from "@nextui-org/react"
 import Image from "next/image"
+import Link from "next/link"
 
 export function Navbar() {
     const {theme} = useTheme()
@@ -21,12 +22,11 @@ export function Navbar() {
                 width={70}
                 height={70}
             />
-            <Text color="white" h2>
-                P
-            </Text>
-            <Text color="white" h4>
-                okemón
-            </Text>
+            <Link href="/">
+                <Text css={{margin: 0}} color="white" h4>
+                    Pokemón
+                </Text>
+            </Link>
             <Spacer css={{flex: 1}} />
             <Text color="white" h4>
                 Favoritos
