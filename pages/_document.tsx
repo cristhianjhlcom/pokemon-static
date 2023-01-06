@@ -1,6 +1,12 @@
-import {CssBaseline} from "@nextui-org/react";
-import Document, {DocumentContext, Head, Html, Main, NextScript} from "next/document";
-import React from "react";
+import {CssBaseline} from '@nextui-org/react';
+import Document, {
+    DocumentContext,
+    Head,
+    Html,
+    Main,
+    NextScript,
+} from 'next/document';
+import React from 'react';
 
 class MyDocument extends Document {
     static async getInitialProps(ctx: DocumentContext) {
@@ -13,7 +19,7 @@ class MyDocument extends Document {
 
     render() {
         return (
-            <Html lang="es">
+            <Html lang='es'>
                 <Head>{CssBaseline.flush()}</Head>
                 <body>
                     <Main />
@@ -25,4 +31,3 @@ class MyDocument extends Document {
 }
 
 export default MyDocument;
-

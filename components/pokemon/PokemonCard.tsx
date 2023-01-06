@@ -21,13 +21,13 @@ export function PokemonCard({pokemon}: Props) {
                 <Card.Body css={{p: 1}}>
                     <Card.Image
                         src={image}
-                        width="100%"
+                        width='100%'
                         height={140}
                         alt={name}
                     />
                 </Card.Body>
                 <Card.Footer>
-                    <Row justify="space-between">
+                    <Row justify='space-between'>
                         <Text>{name}</Text>
                         <Text>#{id}</Text>
                     </Row>
