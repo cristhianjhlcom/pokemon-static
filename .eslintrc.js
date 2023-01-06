@@ -25,13 +25,13 @@ module.exports = {
     rules: {
         semi: ['error', 'always'],
         quotes: ['error', 'single'],
+        'simple-import-sort/exports': 'error',
+        'simple-import-sort/imports': 'error',
         'import/first': 'error',
         'import/newline-after-import': 'error',
         'import/no-duplicates': 'error',
         'import/no-webpack-loader-syntax': 'error',
         'folders/match-regex': ['error', '^[a-z-]+$', '/js/'],
-        'simple-import-sort/exports': 'error',
-        'simple-import-sort/imports': 'error',
         'unused-imports/no-unused-imports': 'error',
         'unused-imports/no-unused-vars': [
             'warn',
