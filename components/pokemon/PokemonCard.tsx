@@ -1,17 +1,18 @@
-import { Card, Grid, Row, Text } from "@nextui-org/react"
-import { useRouter } from "next/router"
-import { Pokemon } from "../../interfaces"
+import { Card, Grid, Row, Text } from "@nextui-org/react";
+import { useRouter } from "next/router";
+
+import { Pokemon } from "../../interfaces";
 
 interface Props {
     pokemon: Pokemon
 }
 
 export function PokemonCard({ pokemon }: Props) {
-    const { id, name, image } = pokemon
-    const router = useRouter()
+    const { id, name, image } = pokemon;
+    const router = useRouter();
 
     function onClick() {
-        router.push(`/pokemons/${id}`)
+        router.push(`/pokemons/${id}`);
     }
 
     return (
@@ -28,6 +29,6 @@ export function PokemonCard({ pokemon }: Props) {
                 </Card.Footer>
             </Card>
         </Grid>
-    )
+    );
 }
 

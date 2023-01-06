@@ -1,9 +1,9 @@
-import {Spacer, Text, useTheme} from "@nextui-org/react"
-import Image from "next/image"
-import Link from "next/link"
+import {Spacer, Text, useTheme} from "@nextui-org/react";
+import Image from "next/image";
+import Link from "next/link";
 
 export function Navbar() {
-    const {theme} = useTheme()
+    const {theme} = useTheme();
     return (
         <div
             style={{
@@ -32,6 +32,6 @@ export function Navbar() {
                 Favoritos
             </Text>
         </div>
-    )
+    );
 }
 

@@ -1,6 +1,7 @@
-import Head from "next/head"
-import {ReactNode} from "react"
-import {Navbar} from "../ui"
+import Head from "next/head";
+import {ReactNode} from "react";
+
+import {Navbar} from "../ui";
 
 interface Props {
     children: ReactNode
@@ -24,6 +25,6 @@ export function Layout({children, title}: Props) {
                 {children}
             </main>
         </>
-    )
+    );
 }
 
