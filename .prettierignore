@@ -1,0 +1,9 @@
+.husky/
+.next/
+node_modules/
+public/
+package.json
+yarn.lock
+next.config.js
+next-env.d.ts
+.editorconfig
